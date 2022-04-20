@@ -2,13 +2,13 @@ import json
 import requests
 import random 
 
-
+# add some thing 
 """
 to see the format of the event input, refer to `sample_api_request.json`
 """
 
 # there are only three tickers available
-TICKERS = ["DUCK1", "DUCK2", "DUCK3"]
+TICKERS = ["DUCK1", "DUCK2", "DUCK3", "DUCK4"]
 
 def hello_world(event, context):
     # simple test

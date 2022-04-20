@@ -1,0 +1,30 @@
+apis:
+- function_name: hello_world
+  http_method: GET
+  path: hello/world
+- function_name: get_ticker_price
+  http_method: POST
+  path: ticker/get
+- function_name: list_tickers
+  http_method: GET
+  path: ticker/list
+- function_name: place_trade
+  http_method: POST
+  path: trade/place
+functions:
+- description: test deploying function from the costack cli
+  handler: costack_main.hello_world
+  id: de50278c-f3d1-4a28-8a9f-9f4d36732c26
+  name: hello_world
+- description: get the ticker prices
+  handler: costack_main.get_ticker_price
+  id: aee7cc69-f3a8-4f38-a10a-6d8c2fd72b5e
+  name: get_ticker_price
+- description: list all tickers
+  handler: costack_main.list_tickers
+  id: 57779a37-f223-4807-b786-5a0e6803b6f3
+  name: list_tickers
+- description: place trade with the allowed tickers
+  handler: costack_main.place_trade
+  id: af877389-f6e0-4d98-82cd-ff6a0eac9e05
+  name: place_trade
