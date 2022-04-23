@@ -1,7 +1,7 @@
 apis:
-- function_name: hello_world
+- function_name: health_check
   http_method: GET
-  path: hello/world
+  path: costack_sample/health_check
 - function_name: get_ticker_price
   http_method: POST
   path: ticker/get
@@ -12,10 +12,10 @@ apis:
   http_method: POST
   path: trade/place
 functions:
-- description: test deploying function from the costack cli
-  handler: costack_main.hello_world
+- description: test
+  handler: costack_main.health_check
   id: null
-  name: hello_world
+  name: health_check
 - description: get the ticker prices
   handler: costack_main.get_ticker_price
   id: null
