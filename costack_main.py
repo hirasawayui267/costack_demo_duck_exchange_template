@@ -12,7 +12,7 @@ to see the format of the event input, refer to `sample_api_request.json`
 TICKERS = ["DUCK1", "DUCK2", "DUCK3", "DUCK4"]
 
 @costack_http(methods=["GET"])
-def ping(event, context):
+def health_check(event, context):
     # simple test
     return {"message": "welcome to duck exchange! Start trading duck coins with api."}
 
